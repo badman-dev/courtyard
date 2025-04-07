@@ -6,27 +6,21 @@
 		"CDmeInputTexture"
 		{
 			"m_name" "string" "inputTexture0"
-			"m_fileName" "string" "_bakeresourcecache/maps/courtyard_baked/env_light_probe_volume_3090.exr"
+			"m_fileName" "string" "_bakeresourcecache/maps/courtyard_baked/env_cubemap_37406.exr"
 			"m_colorSpace" "string" "linear"
 			"m_fileExt" "string" ""
 			"m_nMinBitsPerChannel" "int" "-1"
-			"m_typeString" "string" "3D"
+			"m_typeString" "string" "CUBE"
 			"m_imageProcessorArray" "element_array" 
 			[
-				"CDmeImageProcessor"
-				{
-					"m_algorithm" "string" "None"
-					"m_stringArg" "string" ""
-					"m_vFloat4Arg" "vector4" "0 0 0 0"
-				}
 			]
 			"m_bPassThroughToCompiledVtex" "bool" "0"
-			"m_n3DSliceCount" "int" "132"
-			"m_n3DSliceWidth" "int" "28"
-			"m_n3DSliceHeight" "int" "24"
+			"m_n3DSliceCount" "int" "-1"
+			"m_n3DSliceWidth" "int" "-1"
+			"m_n3DSliceHeight" "int" "-1"
 		}
 	]
-	"m_outputTypeString" "string" "3D"
+	"m_outputTypeString" "string" "CUBEARRAY"
 	"m_outputFormat" "string" "BC6H"
 	"m_outputClearColor" "vector4" "0 0 0 0"
 	"m_nOutputMinDimension" "int" "0"
@@ -40,7 +34,7 @@
 			"m_dstChannels" "string" "rgba"
 			"m_mipAlgorithm" "CDmeImageProcessor"
 			{
-				"m_algorithm" "string" "None"
+				"m_algorithm" "string" "GGXCubeMapBlur"
 				"m_stringArg" "string" ""
 				"m_vFloat4Arg" "vector4" "0 0 0 0"
 			}
